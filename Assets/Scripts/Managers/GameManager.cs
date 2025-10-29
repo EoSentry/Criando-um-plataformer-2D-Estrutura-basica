@@ -1,8 +1,9 @@
 using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
+using Ebac.Core.Singleton;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
     [Header("Player")]
     public GameObject playerPrefab;
